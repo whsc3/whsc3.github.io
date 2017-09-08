@@ -30,7 +30,7 @@ $(document).ready(function () {
 		router.navigate(router.lastRouteResolved().url);
 	});
 	$(window).on('message', function(evt) {
-		router.navigate('/members/'+evt.originalEvent.data);
+		router.navigate('members/'+evt.originalEvent.data);
 	});
 });
 function activateLink(newLinks) {
