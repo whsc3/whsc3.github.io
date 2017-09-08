@@ -6,6 +6,7 @@ $(document).ready(function () {
 	router.on({
 		'/members/:member': function (params) {
 			var url = params.member.toLowerCase().replace(' ','-');
+			alert($('#content').prop('src')+':'+'members/'+url+'/index.html');
 			$('#content').prop('src', 'members/'+url+'/index.html');
 			activateLink($('.membersLink'));
 		},
