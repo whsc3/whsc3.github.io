@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+			html {
+				height: 100vh;
+				width: 100vw;
+			}
+			body {
+				display: flex;
+				flex-direction: column;
+				height: 100vh;
+				width: 100vw;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--Scripts-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/navigo.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!--Content-->
+		<nav>
+			<div class="nav-wrapper" style="padding-left: 10px; padding-right: 10px">
+				<a href="home" class="brand-logo" style="font-size: 12pt" data-navigo>WHS Code Comp Club</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li class="homeLink"><a href="home" data-navigo>Home</a></li>
+					<li class="aboutLink"><a href="members" data-navigo>Members</a></li>
+					<li class="aboutLink"><a href="about" data-navigo>About</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li class="homeLink"><a href="home" data-navigo>Home</a></li>
+					<li class="aboutLink"><a href="members" data-navigo>Members</a></li>
+					<li class="aboutLink"><a href="about" data-navigo>About</a></li>
+				</ul>
+			</div>
+		</nav>
+		<iframe style="flex: 1;" frameborder="0" id="content">
+			Sorry, but you need to enable iframes to use this site
+		</iframe>
+	</body>
+</html>

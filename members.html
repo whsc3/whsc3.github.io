@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<style>
+			body {
+				padding: 20px;
+			}
+			h1 {
+				font-size: 32pt;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>		
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="members/index.js"></script>
+		<h1>Members:</h1>
+		<script type="text/javascript">
+			//this is why we have webcomponents
+			window.members.forEach(function(member) {
+				var card = document.createElement('div');
+				card.className = 'card';
+				var cardContent = document.createElement('div');
+				cardContent.className = 'card-content';
+				var name = document.createElement('span');
+				name.textContent = member.name;
+				name.className = 'card-title';
+				var desc = document.createElement('p');
+				desc.textContent = member.desc;
+				var actions = document.createElement('div');
+				actions.className = 'card-action';
+				var link = document.createElement('a');
+				link.href = '#';
+				link.textContent = 'page';
+				link.onclick = function () {
+					window.parent.postMessage(member.name.toLowerCase().replace(' ','-'), '*');
+				}
+				//add it all together
+				actions.appendChild(link);
+				cardContent.appendChild(name);
+				cardContent.appendChild(desc);
+				cardContent.appendChild(actions);
+				card.appendChild(cardContent);
+				document.body.appendChild(card);
+			});
+		</script>
+	</body>
+</html>
