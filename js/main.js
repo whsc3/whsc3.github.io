@@ -24,7 +24,7 @@ $(document).ready(function () {
 	}).resolve();
 	router.notFound(function () {
 		alert('The page '+window.location.href+' was not found.\nTaking you back to home');
-		router.navigate('home');
+		router.navigate('/home');
 	});
 	$(window).on('message', function(evt) {
 		router.navigate('/members/'+evt.originalEvent.data);
