@@ -6,7 +6,7 @@ $(document).ready(function () {
 	router.on({
 		'/members/:member': function (params) {
 			var url = params.member.toLowerCase().replace(' ','-');
-			$('#content').prop('src', '/members/'+url);
+			$('#content').prop('src', 'members/'+url);
 			activateLink($('.membersLink'));
 		},
 		'/members': function () {
@@ -20,9 +20,6 @@ $(document).ready(function () {
 		'/about': function () {
 			$('#content').prop('src', 'about.html');
 			activateLink($('.aboutLink'));
-		},
-		'*': function () {
-			router.navigate('home');
 		}
 	}).resolve();
 	router.notFound(function () {
@@ -30,7 +27,7 @@ $(document).ready(function () {
 		router.navigate(router.lastRouteResolved().url);
 	});
 	$(window).on('message', function(evt) {
-		router.navigate('members/'+evt.originalEvent.data);
+		router.navigate('/members/'+evt.originalEvent.data);
 	});
 });
 function activateLink(newLinks) {
