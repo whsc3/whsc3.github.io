@@ -6,7 +6,7 @@ $(document).ready(function () {
 	router.on({
 		'/members/:member': function (params) {
 			var url = params.member.toLowerCase().replace(' ','-');
-			$('#content').prop('src', 'members/'+url+'/index.html');
+			$('#content').prop('src', 'members/'+url+'/');
 			activateLink($('.membersLink'));
 		},
 		'/members': function () {
@@ -16,6 +16,10 @@ $(document).ready(function () {
 		'/home': function () {
 			$('#content').prop('src', 'home.html');
 			activateLink($('.homeLink'));
+		},
+		'/training': function () {
+			$('#content').prop('src', 'training.html');
+			activateLink($('.trainingLink'));
 		},
 		'/about': function () {
 			$('#content').prop('src', 'about.html');

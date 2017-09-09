@@ -25,6 +25,9 @@
 				cardContent.className = 'card-content';
 				var name = document.createElement('span');
 				name.textContent = member.name;
+				if(member.office) {
+					name.textContent += ' ('+member.office+')';
+				}
 				name.className = 'card-title';
 				var desc = document.createElement('p');
 				desc.textContent = member.desc;

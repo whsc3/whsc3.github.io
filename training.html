@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<style>
+			body {
+				padding: 20px;
+			}
+			h1 {
+				font-size: 32pt;
+			}
+		</style>
+		<link rel="stylesheet" href="css/atom-one-dark.css">
+		<script src="js/highlight.pack.js"></script>
+		<base target="_blank">
+	</head>
+	<body>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>			
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<div class="card">
+			<div class="card-content">
+				<span class="card-title">USACO Training Site:</span>
+				<p>Most of our training will be done on the <a href="http://train.usaco.org/usacogate">USACO training pages</a></p>
+				<p>From time to time we might look at questions on <a href="https://hackerrank.com">HackerRank</a></p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-content">
+				<span class="card-title">USACO Submission Template</span>
+				<p>If you're submitting an answer for <b>_question</b> with the id <b>_id</b> in Java,</p>
+				<hr>
+				<p><b>_question.java</b></p>
+<pre style="tab-size: 4"><code class="java">
+/*
+ID: _id
+LANG: JAVA
+TASK: _question
+*/
+import java.io.*;
+import java.util.*;
+
+public class _question {
+	public static void main(String[] args) throws Exception {
+		Scanner input = new Scanner(new File("_question.in"));
+		PrintWriter pw = new PrintWriter(new File("_question.out"));
+		/*
+		your code here:
+		Read input using input.next();
+		Write output using pw.println();
+		*/
+	}
+}
+</code></pre>
+			<p>You must end each output line with a '\n' for USACO</p>
+			</div>
+		</div>
+	</body>
+</html>

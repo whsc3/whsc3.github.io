@@ -1,6 +1,7 @@
 window.members = [
 	{
 		name: "Jefferson Lee",
-		desc: "12th grader at Woodbridge High School"
+		desc: "12th grader at Woodbridge High School",
+		office: "President"
 	}
 ]
