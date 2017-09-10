@@ -14,7 +14,7 @@ $(document).ready(function () {
 			activateLink($('.membersLink'));
 		},
 		'/calendar': function () {
-			$('#content').prop('src', "https://calendar.google.com/calendar/embed?title=WHS%20Scheduler&amp;showTitle=0&amp;showPrint=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=klj62f1o13da1h97n8p5oipom4%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FLos_Angeles");
+			$('#content').prop('src', "https://calendar.google.com/calendar/embed?src=klj62f1o13da1h97n8p5oipom4%40group.calendar.google.com&ctz=America/Los_Angeles");
 			activateLink($('.calendarLink'));
 		},
 		'/home': function () {
