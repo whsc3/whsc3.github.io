@@ -37,7 +37,7 @@
 				link.href = '#';
 				link.textContent = 'page';
 				link.onclick = function () {
-					window.parent.postMessage(member.name.toLowerCase().replace(' ','-'), '*');
+					window.parent.postMessage(JSON.stringify({whsmember: member.name.toLowerCase().replace(' ','-')}), '*');
 				}
 				//add it all together
 				actions.appendChild(link);
